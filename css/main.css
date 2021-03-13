@@ -1,16 +1,11 @@
-html {
-    background: #3d3d3d;
-}
-
 body {
     background: #3d3d3d;
     font: 12px 'Lucida Grande', Arial, sans-serif;
 }
 
-#logo {
-    width: 100vh;
-    margin: 65px auto 15px auto;
-    font-size: 6vh;
+.logo {
+    margin-top: 40px;
+    font-size: 2.5rem;
     color: #fff;
     text-align: center;
 }
@@ -33,37 +28,37 @@ body {
 
 #container {
     width: 550px;
-    margin: 50px auto;
+    margin: 25px auto;
     position: relative;
 }
 
 #container .input_wrapper {
     position: absolute;
-    width: 100px;
+    width: 50px;
     height: 50px;
 }
 
 #container .input_wrapper#input_wrapper_tl {
-    top: -2px;
-    left: -115px;
+    top: -1px;
+    left: -50px;
     text-align: right;
 }
 
 #container .input_wrapper#input_wrapper_tr {
-    top: -2px;
-    right: -115px;
+    top: -1px;
+    right: -50px;
     text-align: left;
 }
 
 #container .input_wrapper#input_wrapper_bl {
-    bottom: -2px;
-    left: -115px;
+    bottom: -1px;
+    left: -50px;
     text-align: right;
 }
 
 #container .input_wrapper#input_wrapper_br {
-    bottom: -2px;
-    right: -115px;
+    bottom: -1px;
+    right: -50px;
     text-align: left;
 }
 
@@ -203,4 +198,61 @@ body {
     letter-spacing: 1px;
     font-size: 10px;
     line-height: 1;
+}
+
+@media (max-width: 680px) {
+    .logo {
+        font-size: 1.5rem;
+        padding-bottom: 50px;
+    }
+
+    #container {
+        width: 96vw;
+        margin-right: 5px;
+    }
+
+    #container #surface {
+        width: 75vw;
+    }
+
+    #container #surface textarea {
+        width: 60vw;
+        margin-top: 15%;
+    }
+
+    #container .input_wrapper#input_wrapper_tl {
+        left: 15px;
+        top: -26px;
+    }
+
+    #container .input_wrapper#input_wrapper_bl {
+        left: 15px;
+        bottom: -26px;
+    }
+
+    #container .input_wrapper#input_wrapper_tr {
+        right: 15px;
+        top: -26px;
+    }
+
+    #container .input_wrapper#input_wrapper_br {
+        right: 15px;
+        bottom: -26px;
+    }
+
+    #container #surface #options {
+        margin: 50px 0 50px 0;
+    }
+
+    #container .input_wrapper {
+        width: 25px;
+        height: 25px;
+    }
+
+    #container .input_wrapper input {
+        color: red;
+        background-color: #fff;
+    }
+
+
 }
