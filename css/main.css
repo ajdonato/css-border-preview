@@ -3,6 +3,17 @@ body {
     font: 12px 'Lucida Grande', Arial, sans-serif;
 }
 
+/* remove setas do input number */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
 .logo {
     margin-top: 40px;
     font-size: 2.5rem;
